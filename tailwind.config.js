@@ -2,7 +2,7 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    color: {
+    colors: {
       // primary
       primary_120: "#7B6651",
       primary_100: "#BF9D7D",
