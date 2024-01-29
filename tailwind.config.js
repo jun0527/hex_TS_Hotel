@@ -33,6 +33,8 @@ export default {
       neutral_40: "#ECECEC",
       neutral_10: "#F9F9F9",
       neutral_0: "#FFFFFF",
+      // transparent
+      transparent: "transparent",
     },
     extend: {
       fontFamily: {
