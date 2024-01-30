@@ -9,6 +9,7 @@ export default {
       primary_80: "#D0B79F",
       primary_60: "#D0B79F",
       primary_40: "#F1EAE4",
+      primary_10: "#F7F2EE",
       primary_tint: "#F7F2EE",
       // success
       success_120: "#1D66AC",

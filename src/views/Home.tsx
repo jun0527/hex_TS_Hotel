@@ -1,5 +1,7 @@
 import BannerContent from "@/components/Home/BannerContent";
+import News from "@/components/Home/News";
 import BannerHeader from "@/components/Layout/BannerHeader";
+
 const Home = () => {
   return (
     <>
@@ -7,6 +9,7 @@ const Home = () => {
         <BannerHeader>
           <BannerContent />
         </BannerHeader>
+        <News />
       </div>
     </>
   );
