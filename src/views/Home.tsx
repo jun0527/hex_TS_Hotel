@@ -1,3 +1,4 @@
+import About from "@/components/Home/About";
 import BannerContent from "@/components/Home/BannerContent";
 import News from "@/components/Home/News";
 import BannerHeader from "@/components/Layout/BannerHeader";
@@ -10,6 +11,7 @@ const Home = () => {
           <BannerContent />
         </BannerHeader>
         <News />
+        <About />
       </div>
     </>
   );
