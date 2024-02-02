@@ -33,7 +33,7 @@
   .title {
     @apply font-bold text-[16px];
   }
-  .Subtitle {
+  .subtitle {
     @apply font-bold text-[14px];
   }
   .body {
@@ -44,5 +44,8 @@
   }
   .tiny {
     @apply text-[12px];
+  }
+  .no-scroll {
+    scrollbar-width: none;
   }
 }
