@@ -1,4 +1,5 @@
 import clsx from "clsx";
+import { Link } from "react-router-dom";
 import Button from "../Common/Button";
 import SvgIcon from "../Common/SvgIcon";
 
@@ -6,6 +7,7 @@ type ButtonItem = {
   title: string;
   buttonStyle: string;
   class: string;
+  to: string;
 };
 
 type Props = {
@@ -44,10 +46,14 @@ const Menu = ({ buttons, closeMenu, className }: Props) => {
             return (
               <li key={button.title} className="w-full">
                 <Button
-                  title={button.title}
+                  title=""
                   buttonStyle={button.buttonStyle}
-                  defaultClass={`${button.class} w-full`}
-                ></Button>
+                  defaultClass="!w-full"
+                >
+                  <Link to={button.to} className={button.class}>
+                    {button.title}
+                  </Link>
+                </Button>
               </li>
             );
           })}
