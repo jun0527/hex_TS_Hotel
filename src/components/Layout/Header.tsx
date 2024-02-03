@@ -66,7 +66,7 @@ const Header = () => {
         <Menu
           buttons={buttons}
           closeMenu={switchMenu}
-          className={clsx(isOpenMenu ? "block" : "hidden")}
+          className={clsx(isOpenMenu ? "block" : "!hidden", "block md:!hidden")}
         />
       </header>
     </>
