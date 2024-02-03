@@ -53,10 +53,14 @@ const Header = () => {
             );
           })}
         </ul>
-        <button type="button" onClick={() => switchMenu(true)}>
+        <button
+          type="button"
+          onClick={() => switchMenu(true)}
+          className="block md:hidden"
+        >
           <SvgIcon
             name="ic_menu"
-            svgClass="w-[40px] h-[40px] text-neutral_0 block md:hidden cursor-pointer"
+            svgClass="w-[40px] h-[40px] text-neutral_0 cursor-pointer"
           ></SvgIcon>
         </button>
         <Menu
