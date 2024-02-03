@@ -31,7 +31,7 @@ const Transportation = () => {
       <div
         className={clsx(
           "relative",
-          "pt-[80px] md:pt-[120px] pb-[124px] md:pb-[267px] px-[40px] sm:px-[80px] lg:px-[120px]"
+          "pt-[80px] md:pt-[120px] pb-[124px] md:pb-[267px] px-[12px] sm:px-[80px] lg:px-[120px]"
         )}
       >
         <div className={clsx("max-w-[1296px]", "text-neutral_0", "mx-auto")}>

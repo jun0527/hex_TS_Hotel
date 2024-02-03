@@ -25,7 +25,7 @@ const Room = () => {
       <div
         className={clsx(
           "flex flex-col md:flex-row md:items-end gap-[24px] md:gap-[80px]",
-          "py-[80px] md:py-[120px] px-[12px] md:pr-[40px]"
+          "py-[80px] md:py-[120px] px-[12px] sm:px-[80px] md:pr-[40px]"
         )}
       >
         <div className="w-full md:w-[600px] lg:w-[900px] h-[300px] sm:h-[600px] lg:h-[900px] rounded-r-[8px] overflow-hidden">

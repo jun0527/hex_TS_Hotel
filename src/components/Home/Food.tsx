@@ -46,7 +46,7 @@ const Food = () => {
         className={clsx(
           "relative",
           "bg-primary_10",
-          "py-[80px] md:py-[120px] pl-[12px] md:pl-[312px]"
+          "py-[80px] md:py-[120px] pl-[12px] sm:pl-[80px] md:pl-[312px]"
         )}
       >
         <img

@@ -45,7 +45,7 @@ const News = () => {
         className={clsx(
           "flex flex-col md:flex-row justify-center",
           "bg-primary_10",
-          "px-[12px] lg:px-[80px] py-[80px] md:py-[120px]",
+          "px-[12px] sm:px-[80px] lg:px-[120px] py-[80px] md:py-[120px]",
           "gap-[40px] md:gap-[80px]"
         )}
       >

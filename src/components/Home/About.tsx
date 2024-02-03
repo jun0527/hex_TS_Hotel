@@ -17,7 +17,7 @@ const About = () => {
           className={clsx(
             "absolute inset-0",
             "flex justify-center",
-            "pl-[40px] md:pl-[150px] lg:pl-[200px] pr-[20px] xl:pl-[302px] md:pr-[50px]"
+            "pl-[40px] sm:pl-[80px] md:pl-[150px] lg:pl-[200px] xl:pl-[302px] pr-[20px] md:pr-[50px]"
           )}
         >
           <div
