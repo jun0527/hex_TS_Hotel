@@ -1,12 +1,13 @@
 import clsx from "clsx";
-import { useEffect, useState } from "react";
+import { ReactNode, useEffect, useState } from "react";
 
 type Props = {
   title: string;
   buttonStyle: string;
-  defaultClass: string;
+  defaultClass?: string;
+  children?: ReactNode;
 };
-const Button = ({ title, buttonStyle, defaultClass }: Props) => {
+const Button = ({ title, buttonStyle, defaultClass, children }: Props) => {
   const [className, setClassName] = useState("");
   useEffect(() => {
     switch (buttonStyle) {
@@ -38,6 +39,7 @@ const Button = ({ title, buttonStyle, defaultClass }: Props) => {
   return (
     <button type="button" className={`.title ${className}`}>
       {title}
+      {children}
     </button>
   );
 };

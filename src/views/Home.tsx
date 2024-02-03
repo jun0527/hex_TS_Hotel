@@ -5,7 +5,6 @@ import News from "@/components/Home/News";
 import Room from "@/components/Home/Room";
 import Transportation from "@/components/Home/Transportation";
 import BannerHeader from "@/components/Layout/BannerHeader";
-import Footer from "@/components/Layout/Footer";
 
 const Home = () => {
   return (
@@ -19,7 +18,6 @@ const Home = () => {
         <Room />
         <Food />
         <Transportation />
-        <Footer />
       </div>
     </>
   );

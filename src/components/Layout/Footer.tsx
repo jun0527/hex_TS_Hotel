@@ -1,6 +1,9 @@
 import logo_white from "@/assets/images/logo_white.svg";
 import clsx from "clsx";
 import SvgIcon from "../Common/SvgIcon";
+type Props = {
+  className?: string;
+};
 
 const community = [
   {
@@ -31,10 +34,15 @@ const connections = [
   },
 ];
 
-const Footer = () => {
+const Footer = ({ className }: Props) => {
   return (
     <>
-      <div className="pt-[80px] pb-[80px] md:pb-[120px] px-[12px] sm:px-[80px] lg:px-[120px] text-neutral_0">
+      <div
+        className={clsx(
+          className,
+          "pt-[80px] pb-[80px] md:pb-[120px] px-[12px] sm:px-[80px] lg:px-[120px] text-neutral_0"
+        )}
+      >
         <div className={clsx("max-w-[1296px]", "mx-auto")}>
           <div className="flex flex-col lg:flex-row justify-between gap-[40px] mb-[80px]">
             <div>

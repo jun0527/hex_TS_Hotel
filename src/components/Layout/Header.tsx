@@ -1,6 +1,7 @@
 import logo_white from "@/assets/images/logo_white.svg";
 import clsx from "clsx";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import Button from "../Common/Button";
 import SvgIcon from "../Common/SvgIcon";
 import Menu from "./Menu";
@@ -11,16 +12,19 @@ const Header = () => {
       title: "客房旅宿",
       buttonStyle: "ghost",
       class: "p-[16px]",
+      to: "room_list",
     },
     {
       title: "會員登入",
       buttonStyle: "ghost",
       class: "p-[16px]",
+      to: "login",
     },
     {
       title: "立即訂房",
       buttonStyle: "primary",
       class: "px-[32px] py-[16px]",
+      to: "room_list",
     },
   ];
   const [isOpenMenu, setIsOpenMenu] = useState(false);
@@ -44,11 +48,11 @@ const Header = () => {
           {buttons.map((button) => {
             return (
               <li key={button.title}>
-                <Button
-                  title={button.title}
-                  buttonStyle={button.buttonStyle}
-                  defaultClass={button.class}
-                ></Button>
+                <Button title="" buttonStyle={button.buttonStyle}>
+                  <Link to={button.to} className={button.class}>
+                    {button.title}
+                  </Link>
+                </Button>
               </li>
             );
           })}
