@@ -9,6 +9,7 @@ interface Props<T extends FieldValues> extends UseControllerProps<T> {
   register: UseFormRegister<FieldValues>;
   inputClass?: string;
   options: number[] | string[];
+  class?: string;
 }
 
 const Select = <T extends FieldValues>({
@@ -16,6 +17,7 @@ const Select = <T extends FieldValues>({
   register,
   options,
   defaultValue,
+  class: className,
 }: Props<T>) => {
   return (
     <select
@@ -23,6 +25,7 @@ const Select = <T extends FieldValues>({
       defaultValue={defaultValue}
       {...register(id)}
       className={clsx(
+        className,
         "h-[56px]",
         "text-neutral_80",
         "border border-neutral_40",

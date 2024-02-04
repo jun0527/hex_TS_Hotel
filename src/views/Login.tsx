@@ -65,7 +65,7 @@ const Login = () => {
         email,
         password,
       })
-      .then((res) => {
+      .then(() => {
         alert("成功登入");
       })
       .catch((err) => {
@@ -120,7 +120,7 @@ const Login = () => {
                         register={register}
                         rules={input.rules}
                         placeholder={input.placeholder}
-                        error={errors[input.id]}
+                        error={errors[input.id]?.message?.toString()}
                         defaultValue={input.defaultValue}
                         inputClass="!w-full"
                       />

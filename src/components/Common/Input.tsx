@@ -1,6 +1,5 @@
 import clsx from "clsx";
 import {
-  FieldError,
   FieldValues,
   RegisterOptions,
   UseControllerProps,
@@ -9,7 +8,7 @@ import {
 interface Props<T extends FieldValues> extends UseControllerProps<T> {
   id: string;
   type: string;
-  error?: FieldError | undefined;
+  error?: string;
   register: UseFormRegister<FieldValues>;
   rules?: RegisterOptions<FieldValues>;
   placeholder?: string;
@@ -48,9 +47,7 @@ const Input = <T extends FieldValues>({
           )}
         />
         {error && (
-          <p className="subtitle text-alert_100 absolute top-[56px]">
-            {error?.message}
-          </p>
+          <p className="subtitle text-alert_100 absolute top-[56px]">{error}</p>
         )}
       </div>
     </>

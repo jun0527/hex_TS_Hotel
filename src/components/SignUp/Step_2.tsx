@@ -29,7 +29,6 @@ const Step_2 = ({ simbut }: Props) => {
     handleSubmit,
     control,
     formState: { errors },
-    setError,
   }: UseFormReturn = useForm({
     mode: "onChange",
   });
@@ -203,7 +202,7 @@ const Step_2 = ({ simbut }: Props) => {
                       register={register}
                       rules={input.rules}
                       placeholder={(input as InputItem).placeholder}
-                      error={errors[input.id]}
+                      error={errors[input.id]?.message?.toString()}
                       defaultValue={input.defaultValue}
                       inputClass="!w-full"
                       class={input.class}

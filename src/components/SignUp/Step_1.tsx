@@ -111,7 +111,7 @@ const Step_2 = ({ next }: Props) => {
                       register={register}
                       rules={input.rules}
                       placeholder={(input as InputItem).placeholder}
-                      error={errors[input.id]}
+                      error={errors[input.id]?.message?.toString()}
                       defaultValue={input.defaultValue}
                       inputClass="!w-full"
                     />
