@@ -21,7 +21,9 @@ const Carousel = ({ imageList, children }: Props) => {
     }, 1000);
     return () => clearInterval(timer);
   }, []);
-  const handleClick = (index: number) => {
+  const handleClick = (item: ImageItem, index: number) => {
+    console.log(item);
+
     setCurrent(index);
     setTime(0);
   };
@@ -56,7 +58,7 @@ const Carousel = ({ imageList, children }: Props) => {
                 "mr-[8px] last:mr-0 rounded-full",
                 `${index === current ? "w-[60px] bg-primary_100" : "w-[32px] bg-primary_40"}`
               )}
-              onClick={() => handleClick(index)}
+              onClick={() => handleClick(item, index)}
             />
           ))}
         </div>

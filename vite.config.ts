@@ -5,7 +5,7 @@ import { createSvgIconsPlugin } from "vite-plugin-svg-icons";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: process.env.NODE_ENV === "production" ? "/example-vite-react/" : "/",
+  base: process.env.NODE_ENV === "production" ? "/hex_TS_Hotel/" : "/",
   plugins: [
     react(),
     createSvgIconsPlugin({
