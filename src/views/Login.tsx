@@ -66,7 +66,7 @@ const Login = () => {
         password,
       })
       .then((res) => {
-        console.log(res);
+        alert("成功登入");
       })
       .catch((err) => {
         setError("email", {
@@ -78,7 +78,6 @@ const Login = () => {
   const watchForm = useWatch({
     control,
   });
-  console.log(errors);
   useEffect(() => {}, [errors]);
 
   return (

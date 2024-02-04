@@ -14,6 +14,7 @@ interface Props<T extends FieldValues> extends UseControllerProps<T> {
   rules?: RegisterOptions<FieldValues>;
   placeholder?: string;
   inputClass?: string;
+  class?: string;
 }
 const Input = <T extends FieldValues>({
   id,
@@ -23,10 +24,11 @@ const Input = <T extends FieldValues>({
   rules,
   placeholder,
   inputClass,
+  class: className,
 }: Props<T>) => {
   return (
     <>
-      <div className="flex flex-col relative">
+      <div className={clsx(className, "flex flex-col relative")}>
         <input
           type={type}
           id={id}
