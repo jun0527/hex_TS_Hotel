@@ -112,7 +112,7 @@ const Login = () => {
               <form action="" onSubmit={handleSubmit(onSubmit)}>
                 {loginInput.map((input) => {
                   return (
-                    <div key={input.id}>
+                    <div key={input.id} className="mb-[20px]">
                       <Label id={input.id} labelText={input.labelText}></Label>
                       <Input
                         type={input.type}

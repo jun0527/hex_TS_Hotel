@@ -38,7 +38,7 @@ const Input = <T extends FieldValues>({
             "text-neutral_80 placeholder:text-neutral_60",
             "border border-neutral_40",
             "rounded-[8px]",
-            "p-[16px] mb-[20px]",
+            "p-[16px]",
             "focus:border-primary_100",
             "focus-within:outline-none",
             "disabled:text-neutral_60",
