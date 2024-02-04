@@ -9,7 +9,7 @@ import BannerHeader from "@/components/Layout/BannerHeader";
 const Home = () => {
   return (
     <>
-      <div className="overflow-x-hidden">
+      <div>
         <BannerHeader>
           <BannerContent />
         </BannerHeader>
